@@ -4,17 +4,17 @@
 
 #### 🔷 CMD (Command Prompt)
 ```cmd
-npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p && npm run dev
+npm install && npm install tailwindcss @tailwindcss/vite && npm run dev
 ```
 
 #### 🔶 PowerShell
 ```powershell
-npm install; npm install -D tailwindcss postcss autoprefixer; npx tailwindcss init -p; npm run dev
+npm install; npm install tailwindcss @tailwindcss/vite; npm run dev
 ```
 
 #### 🐧 Bash / Git Bash / WSL / macOS / Linux
 ```bash
-npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p && npm run dev
+npm install && npm install tailwindcss @tailwindcss/vite && npm run dev
 ```
 
 ### ⚙️ `vite.config.js`
