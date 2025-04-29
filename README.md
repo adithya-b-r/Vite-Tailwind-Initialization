@@ -1,16 +1,51 @@
-### 🛠️ Install Tailwind CSS with Vite (for all shells)
+## 🚀 Getting Started with Vite + React + Tailwind CSS
 
-#### ✅ Windows CMD
+### 📦 Install Dependencies
+
+#### 🔷 CMD (Command Prompt)
 ```cmd
 npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p && npm run dev
 ```
 
-#### ✅ PowerShell
+#### 🔶 PowerShell
 ```powershell
 npm install; npm install -D tailwindcss postcss autoprefixer; npx tailwindcss init -p; npm run dev
 ```
 
-#### ✅ Bash / Git Bash / WSL / macOS / Linux
+#### 🐧 Bash / Git Bash / WSL / macOS / Linux
 ```bash
 npm install && npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p && npm run dev
+```
+
+### ⚙️ `vite.config.js`
+
+```js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+})
+```
+
+### 🎨 `index.css` (or `App.css`)
+
+```css
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
 ```
